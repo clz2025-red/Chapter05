@@ -11,7 +11,7 @@ import java.io.OutputStream;
 public class Ex03 {
 
 	public static void main(String[] args) throws IOException{
-	
+		
 		//주 스트림
 		InputStream in = new FileInputStream("C:\\javaStudy\\img.jpg");
 		OutputStream out = new FileOutputStream("C:\\javaStudy\\bufferedimg.jpg");
@@ -38,7 +38,6 @@ public class Ex03 {
 			bout.write(data);
 			
 		}
-		
 		
 		//스트림정리
 		bout.close();   //주스트림도 close 해준다
