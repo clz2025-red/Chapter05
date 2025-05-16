@@ -18,7 +18,6 @@ public class Ex04 {
 		Reader fr = new FileReader("C:\\javaStudy\\PhoneDB.txt");
 		BufferedReader br = new BufferedReader(fr);
 		
-		
 		//반복(파일이 끝까지)
 		while(true) {
 			//파일에서 1줄(이효리)을 읽는다
@@ -72,6 +71,9 @@ public class Ex04 {
 		Person p00= pList.get(0);
 		System.out.println(p00.getName());
 		System.out.println(p00.getHp());
+		
+		//스트림 닫기
+		br.close();
 		
 	}
 
